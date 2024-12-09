@@ -18,6 +18,8 @@ const theme = createTheme({
   },
 });
 
+// sets theme colors
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -30,6 +32,7 @@ function App() {
       ],
     },
   ]);
+  // creates router with Root element, Books as home page and two more pages
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -38,6 +41,7 @@ function App() {
       </ThemeProvider>
     </LocalizationProvider>
   );
+  // returns component with localized dates created theme and router 
 }
 
 export default App;

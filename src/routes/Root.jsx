@@ -9,5 +9,6 @@ function Root() {
     </>
   );
 }
+// returns page with outlet (where all the pages will be renederd) and header
 
 export default Root;

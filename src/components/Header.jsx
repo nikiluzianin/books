@@ -21,6 +21,7 @@ function Header() {
                             Books
                         </Typography>
                     </Typography>
+                    {/* creates Logo Books with link to home*/}
 
                     <Button color="inherit" variant="text" component={Link} to="/">
                         Home
@@ -28,9 +29,11 @@ function Header() {
                     <Button color="inherit" variant="text" component={Link} to="/addnew">
                         Add New
                     </Button>
+                    {/* creates two more links to home and add new book*/}
                 </Toolbar>
             </AppBar>
         </Box>
+        // creates a box, with a header inside
     );
 }
 
