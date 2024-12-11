@@ -33,6 +33,8 @@ function Books() {
     try {
       await get('books');
       setBooks(data);
+      console.log(data);
+
       setIsLoading(loading);
     } catch (error) {
       console.error(error);

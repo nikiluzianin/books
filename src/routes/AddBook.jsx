@@ -24,6 +24,7 @@ function AddBook() {
     start: null,
     end: null,
     stars: null,
+    img: "https://vetforcatsonly.com/wp-content/uploads/2019/12/IMG_0579-300x225-1.jpg"
   });
 
   const genreChangeHandler = (event) => {

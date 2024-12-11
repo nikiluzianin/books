@@ -70,36 +70,17 @@
       "img": "https://www.davidjpphillips.com/wp-content/uploads/2023/08/highonlife_copy-195x300.jpg"
     },
     {
-      "author": "",
-      "name": "",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 6
-    },
-    {
-      "author": "sadf",
-      "name": "asdf",
+      "author": "ds",
+      "name": "asd",
       "genres": [
         "Biography"
       ],
       "completed": false,
-      "start": "02/02/1",
-      "end": null,
-      "stars": "4",
-      "id": 7
-    },
-    {
-      "author": "asd",
-      "name": "asd",
-      "genres": [],
-      "completed": false,
       "start": null,
       "end": null,
       "stars": null,
-      "id": 8
+      "img": "https://vetforcatsonly.com/wp-content/uploads/2019/12/IMG_0579-300x225-1.jpg",
+      "id": 10
     }
   ]
 }
