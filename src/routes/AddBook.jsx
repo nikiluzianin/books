@@ -108,15 +108,17 @@ function AddBook() {
 
         <DateField name="start" label="Started" />
         <DateField name="end" label="Finished" disabled={!book.completed} />
-        <Stack spacing={1}>
+        <Stack spacing={0} >
           <Rating
             name="stars"
             value={rateValue}
             onClick={rateChangeHandler}
-            size="large"
+            size="small"
             onChange={(event, newValue) => {
               setRateValue(newValue);
             }}
+            sx={{ fontSize: "5vw" }}
+          // changed the size of the stars to match
           />
         </Stack>
         <Button variant="contained" type="submit">
