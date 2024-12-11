@@ -68,6 +68,38 @@
       "stars": "5",
       "id": 5,
       "img": "https://www.davidjpphillips.com/wp-content/uploads/2023/08/highonlife_copy-195x300.jpg"
+    },
+    {
+      "author": "",
+      "name": "",
+      "genres": [],
+      "completed": false,
+      "start": null,
+      "end": null,
+      "stars": null,
+      "id": 6
+    },
+    {
+      "author": "sadf",
+      "name": "asdf",
+      "genres": [
+        "Biography"
+      ],
+      "completed": false,
+      "start": "02/02/1",
+      "end": null,
+      "stars": "4",
+      "id": 7
+    },
+    {
+      "author": "asd",
+      "name": "asd",
+      "genres": [],
+      "completed": false,
+      "start": null,
+      "end": null,
+      "stars": null,
+      "id": 8
     }
   ]
 }
