@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import {
   Box,
   Card,
@@ -14,13 +13,16 @@ import {
   TextField
 } from '@mui/material';
 import useAxios from '../services/useAxios';
+import { useNavigate } from 'react-router-dom';
 
 function Books() {
   const { data, alert, loading, get, post, update, remove } = useAxios('http://localhost:3000');
+  const [isLoading, setIsLoading] = useState([]);
   const [books, setBooks] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
 
   const [search, setSearch] = useState("");
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (books.length === 0) {
@@ -29,12 +31,14 @@ function Books() {
   }, [data]);
   // checks if books are fetched; if not - gets them form server
 
+  const goToBook = (id) => {
+    navigate(`/book/${id}`);
+  }
+
   async function getBooks() {
     try {
       await get('books');
       setBooks(data);
-      console.log(data);
-
       setIsLoading(loading);
     } catch (error) {
       console.error(error);
@@ -122,7 +126,7 @@ function Books() {
                       readOnly
                       size="small"
                     />
-                    <Button size="small">Learn More</Button>
+                    <Button size="small" onClick={() => goToBook(book.id)}>Learn More</Button>
                   </CardActions>
                   {/* creates two active elements - rating and a button*/}
                 </Card>
